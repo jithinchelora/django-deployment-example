@@ -1,0 +1,11 @@
+{% extends 'veg_n_fruits/base.html'%} {% block content%}
+<div class="container p-2">
+  <h1>Welcome to VegNFruits</h1>
+
+  {% for name in category%}
+  <ul>
+    <li><a href={{name.id}}>{{name}}</li>
+  </ul>
+  {%endfor%}
+</div>
+{%endblock%}

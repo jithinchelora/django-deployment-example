@@ -1,0 +1,13 @@
+{% extends 'veg_n_fruits/base.html'%} {% block content%}
+<div class="container p-2">
+  <h1>{{namelist}}</h1>
+
+  {%for item in namelist.item.all %}
+  <ul>
+    <h1>{{item.name}}</h1>
+    <li>Price : {{item.price}}</li>
+    <li>Quantity : {{item.quantity}}</li>
+  </ul>
+  {%endfor%}
+</div>
+{%endblock %}
